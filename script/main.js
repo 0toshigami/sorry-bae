@@ -10,12 +10,12 @@ window.addEventListener('load', () => {
         confirmButtonText: 'Tiếp tục',
         // cancelButtonText: 'No',
     }).then((result) => {
-        //if (result.isConfirmed) {
+        if (result.isConfirmed) {
             document.querySelector('.song').play();
             animationTimeline();
-        // } else {
-        //     animationTimeline();
-        // }
+        } else {
+            animationTimeline();
+        }
     });
 });
 
